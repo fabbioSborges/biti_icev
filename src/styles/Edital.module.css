@@ -1,6 +1,7 @@
 .container {
   padding-top: 80px;
   display: flex;
+  flex-direction: row-reverse;
 }
 .leftContainer {
   display: flex;
