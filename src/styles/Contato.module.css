@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   width: 75%;
-
+  justify-content: space-between;
   color: #fff;
   margin-bottom: 10rem;
 }
@@ -48,7 +48,7 @@
 
 .input {
   background: transparent;
-  height: 2rem;
+  height: 3rem;
   border: 1.2px solid #e1e2ed;
   box-sizing: border-box;
   border-radius: 4px;
@@ -68,6 +68,7 @@
 .containerInfo {
   display: inline-flex;
   flex-direction: column;
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -82,6 +83,7 @@
 
 .icon {
   margin-right: 1.5rem;
+  width: 2rem;
 }
 
 .social {

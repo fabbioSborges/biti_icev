@@ -8,8 +8,8 @@ export const ParticleBackground = styled.div`
   width: 100vw;
   height: 100vh;
   position: fixed;
-  overflow-y: scroll;
-  //z-index: -1;
+  /* overflow-y: scroll; */
+  z-index: -10;
 `;
 
 export const Button = styled.button`

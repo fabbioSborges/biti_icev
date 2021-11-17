@@ -33,7 +33,7 @@
   color: white;
 }
 .icone {
-  color: white;
+  max-width: 10rem;
 }
 .item__description {
   margin-left: 1rem;

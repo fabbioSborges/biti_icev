@@ -11,8 +11,8 @@ import Edital from "../../styles/Edital.module.css";
 import Logomarca from "../../assets/img/logomarca_white.png";
 import Logotipo from "../../assets/img/logotipo_bg.png";
 import Avatar from "../../assets/img/avatar.png";
-import Icon1 from "../../assets/img/icon_1.png";
-import Icon2 from "../../assets/img/icon_2.png";
+ import Icon1 from "../../assets/img/icon_1.png";
+/*import Icon2 from "../../assets/img/icon_2.png"; */
 import IconBlock from "../../assets/img/icon_block.png";
 import Email from "../../assets/img/email.png";
 import Telefone_icon from "../../assets/img/telefone_icon.png";
@@ -21,39 +21,24 @@ import Youtube_icon from "../../assets/img/Youtube_icon.png";
 import Instagram_icon from "../../assets/img/Instagram_icon.png";
 import Twitter_icon from "../../assets/img/Twitter_icon.png";
 import Facebook_icon from "../../assets/img/Facebook_icon.png";
+import IconAppDesign from "../../assets/img/icon_app_design.png";
+import IconDesenvolvimento from "../../assets/img/icon_desenvolvimento.png";
+import IconRequisitos from "../../assets/img/icon_requisitos.png";
+import IconValores from "../../assets/img/compassion.png";
+import IconMissao from "../../assets/img/valores.png";
 
 import Particles from "react-particles-js";
 
+
 function Page() {
   return (
-    <Container>
-      <NavBar/>
-      {/* <div className={Home.container}>
-        <div className={Home.header}>
-          <a href="#home">
-            <span>Home</span>
-          </a>
-          <a href="#quem-somos">
-            <span>Quem Somos</span>
-          </a>
-          <a href="#servicos">
-            <span>Serviços</span>
-          </a>
-          <a href="#time">
-            <span>Time</span>
-          </a>
-          <a href="#contato">
-            <span>Contato</span>
-          </a>
-        </div>
-      </div> */}
-
-      <ParticleBackground>
+    <>
+    <ParticleBackground>
         <Particles
           params={{
             particles: {
               number: {
-                value: 30,
+                value: 10,
               },
               size: {
                 value: 3,
@@ -62,6 +47,9 @@ function Page() {
           }}
         />
       </ParticleBackground>
+    <Container>
+      <NavBar/>
+      
       <ModelsWrapper>
         <div>
           {/*Home*/}
@@ -83,44 +71,46 @@ function Page() {
                 <div className={Quemsomos.description}>
                   <h2>Biticev</h2>
                   <span>
-                    <p>
-                      Sed tempus justo leo, in fringilla mauris pharetra vel.
-                      Pellentesque pellentesque, velit a eleifend hendrerit,
-                      tortor ante dapibus diam, eu sodales ante tortor eget
-                      metus. Aenean pharetra turpis malesuada tincidunt
-                      ultrices.
+                  <p>
+                    Tendo em vista a missão da Escola de Tecnologia Aplicada do 
+                    iCEV de fornecer à comunidade Piauiense um espaço de suporte
+                     a propostas inovadoras, nasce a Fábrica de Software - BitiCEV, 
+                     em 2021. Desse modo, visamos proporcionar a conquista da 
+                     excelência e eficiência no desenvolvimento de iniciativas 
+                     empreendedoras, por meio da disponibilização de serviços 
+                     voltados ao desenvolvimento de aplicações de TI. 
                       <br />
                       <br />
-                      Maecenas scelerisque risus sed rhoncus tempus. Vivamus in
-                      quam sagittis, suscipit purus et, scelerisque risus.
-                      Vivamus id magna velit. Aenean nec libero eget risus
-                      sollicitudin rutrum sit amet ut urna. Vivamus pretium
-                      posuere tincidunt. Nam id consequat nisl, et scelerisque
-                      orci.
+                    Ademais, somos um contexto de desenvolvimento acadêmico, uma
+                     vez que professores e docentes realizam trabalho integrado 
+                     para seleção e execução de abordagens criativas, ágeis e 
+                     diferenciadas para a prestação dessas funções, sempre atentos 
+                     às responsabilidades sociais alcançadas.
                     </p>
                   </span>
                 </div>
 
                 <div className={Quemsomos.list}>
                   <div className={Quemsomos.item}>
-                    <img className={Quemsomos.icone} src={Icon1} alt="" />
+                    <img className={Quemsomos.icone} src={IconMissao} alt="" />
                     <div className={Quemsomos.item__description}>
                       <h3>Missão</h3>
                       <p>
-                        Quisque eget consequat nisi, sed sollicitudin metus. Nam
-                        faucibus viverra dui vitae pulvinar. Donec diam lacus,
-                        sollicitudin eu metus eu,
+                      Proporcionamos serviços de consultoria, curadoria, design 
+                      e desenvolvimento de software, por meio da atuação em um
+                       espaço inovador, com integração de alunos e professores 
+                       em uma jornada de aprendizagem criativa.
                       </p>
                     </div>
                   </div>
                   <div className={Quemsomos.item}>
-                    <img className={Quemsomos.icone} src={Icon2} alt="" />
+                    <img className={Quemsomos.icone} src={IconValores} alt="" />
                     <div className={Quemsomos.item__description}>
                       <h3>Valores</h3>
                       <p>
-                        Quisque eget consequat nisi, sed sollicitudin metus. Nam
-                        faucibus viverra dui vitae pulvinar. Donec diam lacus,
-                        sollicitudin eu metus eu,
+                      Fornecer orientação e direção a idealização, planejamento 
+                      e construção de produtos tecnológicos, com foco na praticidade,
+                       velocidade e qualidade.
                       </p>
                     </div>
                   </div>
@@ -185,7 +175,25 @@ function Page() {
             <div className={Servicos.container} id="servicos">
               <h2>Serviços</h2>
               <div className={Servicos.list}>
+              <div className={Servicos.item}>
+                  <img className={Servicos.icone} src={IconDesenvolvimento} alt="" />
+                  <h3>Desenvolvimento</h3>
+                  <p>Construção de aplicações com metodologias ágeis e aplicações de padrões de projetos, tendo em vista a qualidade, manutenibilidade e escalabilidade do projetos.</p>
+                </div>
+
                 <div className={Servicos.item}>
+                  <img className={Servicos.icone} src={IconAppDesign} alt="" />
+                  <h3>Design UI/UX</h3>
+                  <p>Realização de prototipagem de projetos, tendo em foco a excelência da experiência de uso do usuário na aplicação, em consonância com a missão e valores almejados.</p>
+                </div>
+
+                <div className={Servicos.item}>
+                  <img className={Servicos.icone} src={IconRequisitos} alt="" />
+                  <h3>Consultoria</h3>
+                  <p>Por meio da realização de técnicas de elicitação, determinam-se e analisam-se Requisitos Funcionais e Não Funcionais de projetos em estágio de concepção</p>
+                </div>
+
+                {/* <div className={Servicos.item}>
                   <img className={Servicos.icone} src={IconBlock} alt="" />
                   <h3>Desenvolvimento</h3>
                   <p>Lorem ipsum dolor sit amet, consecteteu.</p>
@@ -201,25 +209,7 @@ function Page() {
                   <img className={Servicos.icone} src={IconBlock} alt="" />
                   <h3>Desenvolvimento</h3>
                   <p>Lorem ipsum dolor sit amet, consecteteu.</p>
-                </div>
-
-                <div className={Servicos.item}>
-                  <img className={Servicos.icone} src={IconBlock} alt="" />
-                  <h3>Desenvolvimento</h3>
-                  <p>Lorem ipsum dolor sit amet, consecteteu.</p>
-                </div>
-
-                <div className={Servicos.item}>
-                  <img className={Servicos.icone} src={IconBlock} alt="" />
-                  <h3>Desenvolvimento</h3>
-                  <p>Lorem ipsum dolor sit amet, consecteteu.</p>
-                </div>
-
-                <div className={Servicos.item}>
-                  <img className={Servicos.icone} src={IconBlock} alt="" />
-                  <h3>Desenvolvimento</h3>
-                  <p>Lorem ipsum dolor sit amet, consecteteu.</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </ModelSection>
@@ -240,7 +230,7 @@ function Page() {
                 <h2>Contato</h2>
                 <div className={Contato.contato}>
                   <form className={Contato.form}>
-                    <p>Leave us a mesage</p>
+                  <p>Fale Conosco</p>
                     <input
                       className={Contato.input}
                       type="text"
@@ -311,6 +301,7 @@ function Page() {
         </div>
       </ModelsWrapper>
     </Container>
+    </>
   );
 }
 
