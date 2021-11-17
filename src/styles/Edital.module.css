@@ -236,6 +236,9 @@
   .item__description h3 {
     font-size: 1rem;
   }
+  .inscricao button {
+    font-size: 1rem;
+  }
 }
 /* 
 @media (max-width: 450px) {

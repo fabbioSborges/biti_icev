@@ -43,12 +43,12 @@
     /* flex-direction: column; */
     color: #fff;
     height: auto;
+    display: flex;
   }
   .container h2 {
     margin-top: 100px;
     margin-bottom: 30px;
     font-size: 2rem;
-    width: 100%;
   }
   .list {
     /* display: inline-flex;

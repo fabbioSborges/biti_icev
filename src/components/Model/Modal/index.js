@@ -36,18 +36,14 @@ const Modal = ({ children, ...props }) => {
           <div className="modal-content">
             <h2>Formulario de Inscrição da Proposta</h2>
             <Form onSubmit={handleSubmit} className="form">
-              <p> Apresentação </p>
+              <p> NOME </p>
               <Input name="apresentacao" placeholder="teste"></Input>
               <p> DESCRIÇÃO DO PROBLEMA </p>
               <Input name="descricao"></Input>
-              <p> PESSOAS E INSTITUIÇÕES IMPLICADAS: </p>
-              <Input name="pessoas"></Input>
-              <p> RECURSOS DISPONÍVEIS:</p>
-              <Input name="recursos"></Input>
-              <p> RELEVÂNCIA DO PROBLEMA: </p>
+              <p> RELEVÂNCIA E DIFERENCIAL DO PROBLEMA: </p>
               <Input name="relevancia"></Input>
-              <p> CONTATO INSTITUCIONAL:</p>
-              <Input name="contato"></Input>
+              <p> CONTATO</p>
+              <Input type="number" name="contato"></Input>
               <Button className="btn-modal">Enviar</Button>
             </Form>
             <button className="close-modal" onClick={toggleModal}>
