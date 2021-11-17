@@ -1,4 +1,5 @@
 .container {
+  padding-top: 80px;
   display: flex;
 }
 .leftContainer {
@@ -7,7 +8,6 @@
   align-items: center;
   flex-direction: column;
   width: 50%;
-  height: 100vh;
 }
 .description {
   color: white;
@@ -49,10 +49,8 @@
   align-items: center;
   position: relative;
   width: 50%;
-  height: 100vh;
 }
 .logotipo {
-  position: absolute;
   width: 70%;
 }
 
@@ -194,8 +192,8 @@
 @media (max-width: 800px) {
   .container {
     flex-direction: column-reverse;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 100vw;
   }
 
   .rightContainer {

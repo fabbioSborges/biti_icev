@@ -1,6 +1,6 @@
 .container {
+  padding-top: 80px;
   display: flex;
-  flex-direction: row-reverse;
 }
 .leftContainer {
   display: flex;
@@ -8,7 +8,6 @@
   align-items: center;
   flex-direction: column;
   width: 50%;
-  height: 100vh;
 }
 .description {
   color: white;
@@ -34,7 +33,7 @@
   color: white;
 }
 .icone {
-  color: white;
+  max-width: 10rem;
 }
 .inscricao {
   margin-top: 3rem;
@@ -59,11 +58,9 @@
   align-items: center;
   position: relative;
   width: 50%;
-  height: 100vh;
   z-index: -1;
 }
 .logotipo {
-  position: absolute;
   width: 70%;
 }
 
