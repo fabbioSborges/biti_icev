@@ -149,7 +149,7 @@ export const Carousel1 = () => {
 
   return (
     <div
-      style={{ width: "100%", height: "500px", margin: "0 auto", zindex: "-1" }}
+      style={{ width: "100%", height: "500px", margin: "0 auto" }}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
