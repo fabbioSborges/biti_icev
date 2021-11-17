@@ -27,6 +27,8 @@ import IconRequisitos from "../../assets/img/icon_requisitos.png";
 import IconValores from "../../assets/img/compassion.png";
 import IconMissao from "../../assets/img/valores.png";
 
+import particlesConfig from "../../assets/particlesConfig.json";
+
 import Particles from "react-particles-js";
 
 
@@ -34,7 +36,7 @@ function Page() {
   return (
     <>
     <ParticleBackground>
-        <Particles
+       {/*  <Particles
           params={{
             particles: {
               number: {
@@ -45,7 +47,9 @@ function Page() {
               },
             },
           }}
-        />
+        /> */}
+        <Particles params={{particlesConfig}} className="App-particles__container" />
+      
       </ParticleBackground>
     <Container>
       <NavBar/>
@@ -175,7 +179,7 @@ function Page() {
             <div className={Servicos.container} id="servicos">
               <h2>Serviços</h2>
               <div className={Servicos.list}>
-              <div className={Servicos.item}>
+                <div className={Servicos.item}>
                   <img className={Servicos.icone} src={IconDesenvolvimento} alt="" />
                   <h3>Desenvolvimento</h3>
                   <p>Construção de aplicações com metodologias ágeis e aplicações de padrões de projetos, tendo em vista a qualidade, manutenibilidade e escalabilidade do projetos.</p>

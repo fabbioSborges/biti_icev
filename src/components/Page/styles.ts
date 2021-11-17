@@ -10,6 +10,21 @@ export const ParticleBackground = styled.div`
   position: fixed;
   /* overflow-y: scroll; */
   z-index: -10;
+  .App-particles__container {
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -10;
+  }
+  .App-particles__container canvas {
+    transition: 0.2s all ease-in-out;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 export const Button = styled.button`
