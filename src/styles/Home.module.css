@@ -62,13 +62,14 @@
 .logomarca {
   width: 700px;
   margin: auto;
+  margin-bottom: 200px;
 }
 
 .description {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.9rem;
+  font-weight: 600;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .wrapper {
