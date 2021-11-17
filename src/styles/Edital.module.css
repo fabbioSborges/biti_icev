@@ -39,10 +39,13 @@
   margin-top: 3rem;
   display: flex;
   justify-content: space-around;
+
+  gap: 0.5rem;
 }
 
 .inscricao Button {
   max-width: 300px;
+  font-size: 1rem;
 }
 
 .item__description h3 {
@@ -238,6 +241,10 @@
   }
   .inscricao button {
     font-size: 1rem;
+  }
+  .inscricao {
+    display: flex;
+    gap: 0.5rem;
   }
 }
 /* 
