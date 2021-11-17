@@ -61,7 +61,7 @@ function Page() {
             <div className={Home.container} id="home">
               <div className={Home.hero}>
                 <img className={Home.logomarca} src={Logomarca} alt="" />
-                <span className={Home.description}> Conectando Tecnologia com Grandes Ideias  do iCEV  </span>
+                <span className={Home.description}> Conectando Tecnologia com Grandes Ideias </span>
                 <span className={Home.description}> Fábrica de software do iCEV  </span>
                 {/* <a href="#edital">
                   <Button>Edital</Button>
