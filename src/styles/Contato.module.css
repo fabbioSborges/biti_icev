@@ -122,5 +122,42 @@
   display: inline-flex;
   justify-content: space-between;
   margin: auto;
-  width: 800px;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .link {
+    color: white;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+  }
+  .main {
+    height: 200vh;
+    position: relative;
+    align-items: stretch;
+  }
+  .container {
+    /* display: flex;
+     */
+    margin-top: 100px;
+  }
+  .contato {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    height: 100%;
+  }
+  .containerInfo {
+    margin-top: 100px;
+    height: 50%;
+  }
+  .form {
+    margin-top: 100px;
+    height: 50%;
+  }
+  .rodape {
+    position: absolute;
+    bottom: 0;
+  }
 }

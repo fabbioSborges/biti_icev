@@ -22,10 +22,10 @@
   font-size: 1.5rem;
 }
 
-.description {
+.time span {
+  width: 500px;
   text-align: center;
-  width: 50%;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .avatar {
@@ -36,22 +36,22 @@
 @media (max-width: 870px) {
   .time h3 {
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .time span {
+    width: 500px;
+    text-align: center;
+    font-size: 1.3rem;
   }
 
   .avatar {
-    height: 200px;
-    width: 200px;
-  }
-
-  .description {
-    width: 50%;
-    font-size: 0.8rem;
+    height: 250px;
+    width: 250px;
   }
 }
 
-/* @media (max-width: 520px) {
+@media (max-width: 520px) {
   .time h3 {
     text-align: center;
     font-size: 1.4rem;
@@ -108,4 +108,3 @@
     width: 110px;
   }
 }
- */

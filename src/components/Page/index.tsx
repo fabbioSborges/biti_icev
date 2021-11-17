@@ -1,4 +1,4 @@
-import { ModelsWrapper, ModelSection, Carousel1, Maps, NavBar} from "../Model";
+import { ModelsWrapper, ModelSection, Carousel1, Maps, NavBar, Modal} from "../Model";
 import { Container, ParticleBackground, Button, ButtonForm } from "./styles";
 
 import Home from "../../styles/Home.module.css";
@@ -6,6 +6,7 @@ import Quemsomos from "../../styles/Quemsomos.module.css";
 import Servicos from "../../styles/Servicos.module.css";
 import Time from "../../styles/Time.module.css";
 import Contato from "../../styles/Contato.module.css";
+import Edital from "../../styles/Edital.module.css";
 
 import Logomarca from "../../assets/img/logomarca_white.png";
 import Logotipo from "../../assets/img/logotipo_bg.png";
@@ -131,6 +132,54 @@ function Page() {
             </div>
           </ModelSection>
 
+          {/*EDital */}
+          <ModelSection>
+            <div className={Edital.container} id="quem-somos">
+              <div className={Edital.leftContainer}>
+                <div className={Edital.description}>
+                  <h2>Edital</h2>
+                  <span>
+                    <p>
+                      O Edital visa selecionar propostas para desenvolvimento de
+                      artefatos de software pela Fábrica Educacional de Software 
+                      da iCEV - BitiCEV.
+                      <br />
+                      <br />
+                      O iCEV, disponibiliza por meio deste edital, sua Fábrica 
+                      Educacional de Software - BitiCEV para apoio a projetos, 
+                      com vistas ao estabelecimento de ações para o fortalecimento 
+                      destas entidades e que contribuam para o incremento das atividades inovadoras,
+                    na forma do desenvolvimento de aplicações de TI. 
+                    </p>
+                  </span>
+                </div>
+
+                <div className={Edital.list}>
+                  <div className={Edital.item}>
+                    <img className={Edital.icone} src={Icon1} alt="" />
+                    <div className={Edital.item__description}>
+                      <h3>Inscrição</h3>
+                      <p>
+                        As inscrições abriram no dia 17/11/2021 e se encerram em 
+                        17/12/2021 às 18 horas. 
+                        Acesse o edital vigente e confira todas as regras para participação.
+                      </p>
+                    </div>
+                  </div>
+                  <div className={Edital.inscricao}>
+                      <Button>Edital</Button>
+                      <Modal> 
+                        Inscrição
+                      </Modal>
+                  </div>
+                </div>
+              </div>
+              <div className={Edital.rightContainer}>
+                <img className={Edital.logotipo} src={Logotipo} alt="" />
+              </div>
+            </div>
+          </ModelSection>
+
           {/*Servicos*/}
           <ModelSection>
             <div className={Servicos.container} id="servicos">
@@ -210,7 +259,7 @@ function Page() {
                     <ButtonForm type="submit">Send</ButtonForm>
                   </form>
                   <div className={Contato.containerInfo}>
-                    <div className={Contato.info}>
+                  <div className={Contato.info}>
                       <img src={Email} className={Contato.icon} alt="" />
                       <p>bitcev@gmail.com </p>
                     </div>
@@ -237,6 +286,9 @@ function Page() {
                   <img className={Contato.logomarca} src={Logomarca} alt="" />
                 </div>
                 <div className={Contato.link}>
+                  <p>© 2021 Made with lot of ❤ and ☕ by BitCev®</p>
+                </div>
+                {/* <div className={Contato.link}>
                   <a href="#home">
                     <span>Home</span>
                   </a>
@@ -252,7 +304,7 @@ function Page() {
                   <a href="#contato">
                     <span>Contato</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </ModelSection>

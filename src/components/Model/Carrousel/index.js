@@ -20,7 +20,7 @@ export const Carousel1 = () => {
         <div className={Time.time}>
           <img className={Time.avatar} src={Avatar} alt="" />
           <h3>Nome</h3>
-          <span className={Time.description}>
+          <span className={Time.span}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </span>
@@ -33,7 +33,7 @@ export const Carousel1 = () => {
         <div className={Time.time}>
           <img className={Time.avatar} src={Avatar} alt="" />
           <h3>Nome</h3>
-          <span className={Time.description}>
+          <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </span>
@@ -46,7 +46,7 @@ export const Carousel1 = () => {
         <div className={Time.time}>
           <img className={Time.avatar} src={Avatar} alt="" />
           <h3>Nome</h3>
-          <span className={Time.description}>
+          <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </span>
@@ -59,7 +59,7 @@ export const Carousel1 = () => {
         <div className={Time.time}>
           <img className={Time.avatar} src={Avatar} alt="" />
           <h3>Nome</h3>
-          <span className={Time.description}>
+          <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </span>
@@ -72,7 +72,7 @@ export const Carousel1 = () => {
         <div className={Time.time}>
           <img className={Time.avatar} src={Avatar} alt="" />
           <h3>Nome</h3>
-          <span className={Time.description}>
+          <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </span>
@@ -85,7 +85,7 @@ export const Carousel1 = () => {
         <div className={Time.time}>
           <img className={Time.avatar} src={Avatar} alt="" />
           <h3>Nome</h3>
-          <span className={Time.description}>
+          <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </span>
