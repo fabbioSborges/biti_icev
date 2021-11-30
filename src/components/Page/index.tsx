@@ -162,7 +162,7 @@ function Page() {
                     </div>
                   </div>
                   <div className={Edital.inscricao}>
-                      <Button>Edital</Button>
+                      <Button> <a href="https://biticev-api.herokuapp.com/api/edict/65/pdf" download="nome-do-arquivo">Edital</a></Button>
                       <Modal> 
                         Inscrição
                       </Modal>

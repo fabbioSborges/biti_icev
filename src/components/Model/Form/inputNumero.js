@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
+import InputMask from "react-input-mask";
 import { useField } from "@unform/core";
 import "./input.css";
 
-const Input = ({ children, name, ...rest }) => {
+const Input = ({ children, name, props, ...rest }) => {
   const inputRef = useRef(null);
   const { fieldName, registerField, defaultValue, error } = useField(name);
 
@@ -14,10 +15,15 @@ const Input = ({ children, name, ...rest }) => {
     });
   }, [fieldName, registerField]);
 
-  return <textarea ref={inputRef} {...rest} className="input"></textarea>;
-  {
-    /* <input ref={inputRef} {...rest} className="input"></input>; */
-  }
+  return (
+    <InputMask
+      mask="(99) 99999-9999"
+      ref={inputRef}
+      {...rest}
+      className="input"
+    />
+  );
+  /*  <input ref={inputRef} {...rest} className="input"></input>; */
 };
 
 export default Input;

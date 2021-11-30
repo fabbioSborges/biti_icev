@@ -14,10 +14,7 @@ const Input = ({ children, name, ...rest }) => {
     });
   }, [fieldName, registerField]);
 
-  return <textarea ref={inputRef} {...rest} className="input"></textarea>;
-  {
-    /* <input ref={inputRef} {...rest} className="input"></input>; */
-  }
+  return <input ref={inputRef} {...rest} className="input"></input>;
 };
 
 export default Input;

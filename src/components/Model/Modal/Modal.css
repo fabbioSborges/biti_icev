@@ -60,7 +60,7 @@ body.active-modal {
 
 @media (max-width: 500px) {
   .modal-content {
-    top: calc(100% - 80px);
+    top: calc(100% - 300px);
     min-width: 300px;
   }
 }
